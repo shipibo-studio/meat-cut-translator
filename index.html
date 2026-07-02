@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Cortes de Carne 🥩</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Traductor de Cortes de Carne 🥩</h1>
+        </header>
+        <main>
+            <div class="translator-card">
+                <div class="input-group">
+                    <label for="base-country">País Base</label>
+                    <select id="base-country">
+                        <option value="br">🇧🇷 Brazil</option>
+                        <option value="cl">🇨🇱 Chile</option>
+                        <option value="ar">🇦🇷 Argentina</option>
+                        <option value="us">🇺🇸 USA</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="meat-cut">Corte de Carne 🥩</label>
+                    <select id="meat-cut">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div id="results">
+                    <!-- Results will be displayed here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/public/js/app.js"></script>
+</body>
+</html>
