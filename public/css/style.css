@@ -53,11 +53,11 @@ header h1 {
   margin-bottom: 30px;
   font-size: 3em;
   font-weight: 800;
-  background: linear-gradient(135deg, #1b1616 0%, rgba(49, 13, 13, 0.8) 100%);
+  background: linear-gradient(135deg, #ffe5e5 0%, rgba(212, 204, 204, 0.8) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
   letter-spacing: -1px;
 }
 
@@ -85,8 +85,15 @@ header h1 {
     inset 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
+.selectors-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
 .input-group {
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .input-group label {
@@ -150,6 +157,12 @@ header h1 {
   gap: 16px;
 }
 
+@media (min-width: 769px) {
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .result-item {
   background: rgba(0, 0, 0, 0.35);
   padding: 16px;
@@ -204,6 +217,11 @@ header h1 {
 }
 
 @media (max-width: 768px) {
+  .selectors-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   header h1 {
     font-size: 2em;
     margin-bottom: 20px;
